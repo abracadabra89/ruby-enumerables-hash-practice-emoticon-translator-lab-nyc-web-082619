@@ -2,7 +2,7 @@
 
 def load_library(file_path, emoticon)
   # code goes here
-  hash = load_library(file_path)	 
+  library = YAML.load_file(file_path)
   hash["get_emoticon"].each do |eng,jap|
   if eng == emoticon	   
       return jap
