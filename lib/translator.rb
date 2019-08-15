@@ -6,7 +6,7 @@ def load_library(file_path, emoticon)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|   
       result["get_meaning"][emoticons[1]] = meaning
-      break
+      result["get_emoticon"][emoticons[0]] = emoticons[1]
     end
   end	
   "Sorry, that emoticon was not found"
