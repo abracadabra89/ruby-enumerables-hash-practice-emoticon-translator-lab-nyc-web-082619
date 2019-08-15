@@ -3,11 +3,12 @@
 def load_library
   # code goes here
   require "yaml"
-fruits = YAML.load_file('fruits.yml')
+emoticons = YAML.load_file('emoticons.yml')
 end
 
 def get_japanese_emoticon
   # code goes here
+  
 end
 
 def get_english_meaning
