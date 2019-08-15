@@ -1,6 +1,6 @@
 # require modules here
 
-def load_library(file_path, emoticon)
+def load_library(file_path)
   # code goes here
   library = YAML.load_file(file_path)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
