@@ -5,7 +5,7 @@ def load_library(file_path, emoticon)
   library = YAML.load_file(file_path)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|   
-      return jap
+      result["get_meaning"][emoticons[1]] = meaning
       break
     end
   end	
